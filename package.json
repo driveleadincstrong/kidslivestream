@@ -1,0 +1,24 @@
+{
+  "name": "youtube-audio-streamer",
+  "version": "1.0.0",
+  "description": "Stream audio with fixed video to YouTube using FFmpeg",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "postinstall": "mkdir -p assets"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
